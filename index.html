@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ResumeForge AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <h1>ResumeForge AI</h1>
+
+        <p class="subtitle">
+            Build smarter resumes with AI assistance.
+        </p>
+        <div class="input-group">
+
+<label>Choose Template</label>
+
+<select id="templateSelector">
+
+<option value="modern">
+Modern
+</option>
+
+<option value="minimal">
+Minimal
+</option>
+
+<option value="corporate">
+Corporate
+</option>
+
+</select>
+
+</div>
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="John Doe">
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="john@email.com">
+        </div>
+
+        <div class="input-group">
+            <label>Role</label>
+            <input type="text" id="role" placeholder="Frontend Developer">
+        </div>
+
+        <div class="input-group">
+            <label>Skills</label>
+            <textarea id="skills" placeholder="HTML, CSS, JavaScript"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>College / Institution</label>
+            <input type="text" id="college" placeholder="Christ College of Engineering">
+        </div>
+
+        <div class="input-group">
+            <label>Degree</label>
+            <input type="text" id="degree" placeholder="BTech Computer Science & Business Systems">
+        </div>
+
+        <button id="generateBtn">
+            Generate AI Summary
+        </button>
+
+        <button id="downloadBtn">
+            Download Resume PDF
+        </button>
+
+        <div class="score-box">
+
+            <h3>Resume Strength</h3>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <p id="scoreText">0% Complete</p>
+
+        </div>
+
+    </div>
+
+    <div class="right-panel">
+
+        <div class="resume-card" id="resumePreview">
+
+            <h2 id="previewName">Your Name</h2>
+
+            <p id="previewRole">
+                Your Role
+            </p>
+
+            <hr>
+
+            <h3>Contact</h3>
+
+            <p id="previewEmail">
+                your@email.com
+            </p>
+
+            <h3>Skills</h3>
+
+            <p id="previewSkills">
+                Skills will appear here.
+            </p>
+
+            <h3>Education</h3>
+
+            <p id="previewCollege">
+                Your College
+            </p>
+
+            <p id="previewDegree">
+                Your Degree
+            </p>
+
+            <h3>Professional Summary</h3>
+
+            <p id="summaryText">
+                AI generated summary will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
