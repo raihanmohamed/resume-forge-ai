@@ -16,130 +16,155 @@
 
 <div class="container">
 
-    <div class="left-panel">
+<div class="left-panel">
 
-        <h1>ResumeForge AI</h1>
+<h1>ResumeForge AI</h1>
 
-        <p class="subtitle">
-            Build smarter resumes with AI assistance.
-        </p>
-        <div class="input-group">
+<p class="subtitle">
+Build smarter resumes with AI assistance.
+</p>
+
+<div class="input-group">
 
 <label>Choose Template</label>
 
 <select id="templateSelector">
 
-<option value="modern">
-Modern
-</option>
-
-<option value="minimal">
-Minimal
-</option>
-
-<option value="corporate">
-Corporate
-</option>
+<option value="modern">Modern</option>
+<option value="minimal">Minimal</option>
+<option value="corporate">Corporate</option>
 
 </select>
 
 </div>
 
-        <div class="input-group">
-            <label>Full Name</label>
-            <input type="text" id="name" placeholder="John Doe">
-        </div>
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" id="name" placeholder="John Doe">
+</div>
 
-        <div class="input-group">
-            <label>Email</label>
-            <input type="email" id="email" placeholder="john@email.com">
-        </div>
+<div class="input-group">
+<label>Email</label>
+<input type="email" id="email" placeholder="john@email.com">
+</div>
 
-        <div class="input-group">
-            <label>Role</label>
-            <input type="text" id="role" placeholder="Frontend Developer">
-        </div>
+<div class="input-group">
+<label>Role</label>
+<input type="text" id="role" placeholder="Frontend Developer">
+</div>
 
-        <div class="input-group">
-            <label>Skills</label>
-            <textarea id="skills" placeholder="HTML, CSS, JavaScript"></textarea>
-        </div>
+<div class="input-group">
+<label>Skills</label>
+<textarea id="skills"
+placeholder="HTML, CSS, JavaScript"></textarea>
+</div>
 
-        <div class="input-group">
-            <label>College / Institution</label>
-            <input type="text" id="college" placeholder="Christ College of Engineering">
-        </div>
+<div class="input-group">
+<label>College / Institution</label>
+<input type="text" id="college">
+</div>
 
-        <div class="input-group">
-            <label>Degree</label>
-            <input type="text" id="degree" placeholder="BTech Computer Science & Business Systems">
-        </div>
+<div class="input-group">
+<label>Degree</label>
+<input type="text" id="degree">
+</div>
 
-        <button id="generateBtn">
-            Generate AI Summary
-        </button>
+<div class="input-group">
+<label>Job Title</label>
+<input type="text" id="jobTitle">
+</div>
 
-        <button id="downloadBtn">
-            Download Resume PDF
-        </button>
+<div class="input-group">
+<label>Company Name</label>
+<input type="text" id="company">
+</div>
 
-        <div class="score-box">
+<div class="input-group">
+<label>Experience Description</label>
+<textarea id="experienceDesc"></textarea>
+</div>
 
-            <h3>Resume Strength</h3>
+<button id="generateBtn">
+Generate AI Summary
+</button>
 
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
-            </div>
+<button id="downloadBtn">
+Download Resume PDF
+</button>
 
-            <p id="scoreText">0% Complete</p>
+<div class="score-box">
 
-        </div>
+<h3>Resume Strength</h3>
 
-    </div>
+<div class="progress-bar">
+<div class="progress-fill"
+id="progressFill"></div>
+</div>
 
-    <div class="right-panel">
+<p id="scoreText">
+0% Complete
+</p>
 
-        <div class="resume-card" id="resumePreview">
+</div>
 
-            <h2 id="previewName">Your Name</h2>
+</div>
 
-            <p id="previewRole">
-                Your Role
-            </p>
+<div class="right-panel">
 
-            <hr>
+<div class="resume-card"
+id="resumePreview">
 
-            <h3>Contact</h3>
+<h2 id="previewName">
+Your Name
+</h2>
 
-            <p id="previewEmail">
-                your@email.com
-            </p>
+<p id="previewRole">
+Your Role
+</p>
 
-            <h3>Skills</h3>
+<hr>
 
-            <p id="previewSkills">
-                Skills will appear here.
-            </p>
+<h3>Contact</h3>
 
-            <h3>Education</h3>
+<p id="previewEmail">
+your@email.com
+</p>
 
-            <p id="previewCollege">
-                Your College
-            </p>
+<h3>Skills</h3>
 
-            <p id="previewDegree">
-                Your Degree
-            </p>
+<p id="previewSkills">
+Skills will appear here.
+</p>
 
-            <h3>Professional Summary</h3>
+<h3>Education</h3>
 
-            <p id="summaryText">
-                AI generated summary will appear here.
-            </p>
+<p id="previewCollege">
+Your College
+</p>
 
-        </div>
+<p id="previewDegree">
+Your Degree
+</p>
 
-    </div>
+<h3>Experience</h3>
+
+<p id="previewExperienceTitle">
+Frontend Intern — Company
+</p>
+
+<p id="previewExperienceDesc">
+Experience description.
+</p>
+
+<h3>Professional Summary</h3>
+
+<p id="summaryText">
+AI generated summary will appear here.
+</p>
+
+</div>
+
+</div>
 
 </div>
 
