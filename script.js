@@ -23,7 +23,6 @@ const summaryText = document.getElementById("summaryText");
 
 const resumeCard = document.getElementById("resumePreview");
 
-/* ---------------- PREVIEW UPDATE ---------------- */
 
 function updatePreview() {
     previewName.textContent = nameInput.value || "Your Name";
@@ -43,8 +42,6 @@ function updatePreview() {
         experienceDescInput.value || "Experience description.";
 }
 
-/* ---------------- SCORE ---------------- */
-
 function updateScore() {
     let score = 0;
 
@@ -61,7 +58,6 @@ function updateScore() {
     document.getElementById("scoreText").textContent = score + "% Complete";
 }
 
-/* ---------------- SAVE DATA ---------------- */
 
 function saveData() {
     localStorage.setItem(
@@ -80,7 +76,6 @@ function saveData() {
     );
 }
 
-/* ---------------- LOAD DATA ---------------- */
 
 function loadData() {
     const data = JSON.parse(localStorage.getItem("resumeData"));
@@ -101,7 +96,6 @@ function loadData() {
     updateScore();
 }
 
-/* ---------------- EVENT LISTENERS ---------------- */
 
 [
     nameInput,
@@ -121,7 +115,6 @@ function loadData() {
     });
 });
 
-/* ---------------- AI SUMMARY ---------------- */
 
 document.getElementById("generateBtn").addEventListener("click", () => {
 
@@ -147,14 +140,12 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     summaryText.textContent = summary;
 });
 
-/* ---------------- TEMPLATE SWITCH ---------------- */
 
 templateSelector.addEventListener("change", () => {
     resumeCard.className = "resume-card";
     resumeCard.classList.add(templateSelector.value);
 });
 
-/* ---------------- PDF DOWNLOAD ---------------- */
 
 document.getElementById("downloadBtn").addEventListener("click", () => {
     html2pdf()
@@ -162,7 +153,6 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
         .save("ResumeForge_Resume.pdf");
 });
 
-/* ---------------- INIT ---------------- */
 
 loadData();
 updatePreview();

@@ -21,8 +21,6 @@ min-height:100vh;
 
 }
 
-/* ---------- LEFT PANEL ---------- */
-
 .left-panel{
 
 width:40%;
@@ -55,7 +53,6 @@ line-height:1.5;
 
 }
 
-/* ---------- INPUTS ---------- */
 
 .input-group{
 
@@ -155,7 +152,6 @@ box-shadow:0 10px 25px rgba(59,130,246,0.35);
 
 }
 
-/* ---------- SCORE BOX ---------- */
 
 .score-box{
 
@@ -208,7 +204,6 @@ color:#cbd5e1;
 
 }
 
-/* ---------- RIGHT PANEL ---------- */
 
 .right-panel{
 
@@ -224,7 +219,6 @@ align-items:center;
 
 }
 
-/* ---------- RESUME CARD ---------- */
 
 .resume-card{
 
@@ -290,7 +284,6 @@ background:#d1d5db;
 
 }
 
-/* ---------- TEMPLATE STYLES ---------- */
 
 .modern{
 
@@ -324,7 +317,6 @@ letter-spacing:0.3px;
 
 }
 
-/* ---------- RESPONSIVE ---------- */
 
 @media(max-width:950px){
 
